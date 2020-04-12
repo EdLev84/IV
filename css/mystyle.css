@@ -50,3 +50,42 @@ header .top-information .phone-block mark {
   background: none;
   color: #ee8a56;
 }
+
+header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1d76a0;
+  min-height: 60px;
+  margin-top: 30px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  height: 60px;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+header nav ul li:hover {
+  background-color: #ee8a56;
+}
