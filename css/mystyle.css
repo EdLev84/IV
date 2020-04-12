@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+header .top-information {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Oswald", sans-serif;
+  margin-top: 10px;
+}
+
+header .top-information .logo-block {
+  display: flex;
+  align-items: center;
+  color: #ee8a56;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header .top-information .logo-block img {
+  margin-right: 10px;
+}
+
+header .top-information .phone-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .top-information .phone-block img {
+  margin-right: 10px;
+}
+
+header .top-information .phone-block p {
+  font-size: 17px;
+}
+
+header .top-information .phone-block mark {
+  background: none;
+  color: #ee8a56;
+}
