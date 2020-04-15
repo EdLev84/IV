@@ -179,3 +179,276 @@ header nav ul li:hover .submenu {
 header nav ul .other-link:hover .submenu2 {
   transform: scale(1);
 }
+
+.first {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+  margin: 20px 0 20px 0;
+}
+
+.first .loader-info-block {
+  max-width: 400px;
+  width: 400px;
+  min-width: 200px;
+}
+
+.first .loader-info-block .loader-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  color: black;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.first .loader-info-block .loader-head p {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.first .loader-info-block .loader-head .square {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 10px 10px 0 rgba(253, 189, 99, 0.7);
+  background-color: #ee8a56;
+}
+
+.first .loader-info-block .loader-img {
+  background-image: url(../img/porter.png);
+  background-size: cover;
+  min-height: 330px;
+  border: 3px solid #e3e4e5;
+  border-top: none;
+}
+
+.first .loader-info-block .loader-tarrif {
+  text-align: center;
+  box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8);
+  min-height: 200px;
+}
+
+.first .loader-info-block .loader-tarrif .supply {
+  border: 8px solid #ee8a56;
+  border-top: none;
+  font-size: 24px;
+  font-weight: 700;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.first .loader-info-block .loader-warning {
+  margin-top: 30px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid #ee8a56;
+  text-align: center;
+}
+
+.first .loader-info-block .loader-warning .warning {
+  font-size: 50px;
+  color: #ee8a56;
+  text-shadow: 0 10px 15px rgba(253, 189, 99, 0.7);
+}
+
+.first .loader-info-block .loader-warning p {
+  font-size: 18px;
+}
+
+.first .loader-info-block .loader-warning button {
+  width: 250px;
+  height: 50px;
+  color: #ffffff;
+  background: linear-gradient(to right, #1f78a2, #8be4fa);
+  box-shadow: 0 10px 15px rgba(31, 120, 160, 0.7);
+  border: none;
+  margin-bottom: 10px;
+}
+
+.first .price {
+  font-size: 36px;
+  color: #3893ae;
+  font-weight: bold;
+}
+
+.first .cars-info-block {
+  width: 800px;
+  max-width: 800px;
+  position: relative;
+  min-height: 500px;
+}
+
+.first .cars-info-block .controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.first .cars-info-block .cars-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.first .cars-info-block .cars-head p {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.first .cars-info-block .cars-head .square {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 10px 10px 0 rgba(253, 189, 99, 0.7);
+  background-color: #ee8a56;
+}
+
+.first .cars-info-block .cars-block {
+  max-width: 800px;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.first .cars-info-block .cars-block .car {
+  width: 160px;
+  min-height: 120px;
+  text-align: center;
+  margin: 25px 0 5px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8);
+}
+
+.first .cars-info-block .cars-block .car p {
+  font-size: 14px;
+}
+
+.first .cars-info-block .cars-block .car .price {
+  font-size: 24px;
+  color: #3893ae;
+  font-weight: bold;
+}
+
+.first .cars-info-block .cars-block .car img {
+  margin-top: 5px;
+}
+
+.first .block-info-car {
+  position: relative;
+  overflow: hidden;
+  width: 780px;
+  max-width: 800px;
+  max-height: 600px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8);
+  margin: 0 auto;
+}
+
+.first .block-info-car .info-car {
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.first .block-info-car .info-car .truck, .first .block-info-car .info-car .truck-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.first .block-info-car .info-car .truck .truck-price, .first .block-info-car .info-car .truck-info .truck-price {
+  width: 250px;
+  padding-right: 10px;
+}
+
+.first .block-info-car .info-car .truck .truck-price mark, .first .block-info-car .info-car .truck-info .truck-price mark {
+  background: none;
+  color: #ee8a56;
+}
+
+.first .block-info-car .info-car .truck .truck-price .supply, .first .block-info-car .info-car .truck-info .truck-price .supply {
+  border: 4px solid #ee8a56;
+  border-top: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.first .block-info-car .info-car .truck .characteristic, .first .block-info-car .info-car .truck-info .characteristic {
+  width: 320px;
+  padding-left: 10px;
+}
+
+.first .block-info-car .info-car .truck .characteristic h3, .first .block-info-car .info-car .truck-info .characteristic h3 {
+  margin-bottom: 5px;
+}
+
+.first .block-info-car .info-car .truck .characteristic .grey, .first .block-info-car .info-car .truck-info .characteristic .grey {
+  border: 1px solid #cfcfd1;
+  background-color: #e5e6e8;
+  text-align: left;
+  font-size: 13px;
+  padding: 3px;
+}
+
+.first .block-info-car .info-car .truck .characteristic .white, .first .block-info-car .info-car .truck-info .characteristic .white {
+  border: 1px solid #cfcfd1;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  padding: 3px;
+}
+
+.first input {
+  display: none;
+}
+
+.first label {
+  background-image: url(../img/angle-down.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: block;
+}
+
+.first #car1:checked ~ .controls > label:nth-of-type(1),
+.first #car2:checked ~ .controls > label:nth-of-type(2),
+.first #car3:checked ~ .controls > label:nth-of-type(3),
+.first #car4:checked ~ .controls > label:nth-of-type(4) {
+  background-image: url(../img/angle-down.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.first #car1:checked ~ .cars-block > .show1,
+.first #car2:checked ~ .cars-block > .show2,
+.first #car3:checked ~ .cars-block > .show3,
+.first #car4:checked ~ .cars-block > .show4 {
+  background-color: #b8b8b8;
+  color: #ffffff;
+}
+
+.first #car1:checked ~ .block-info-car > .car1,
+.first #car2:checked ~ .block-info-car > .car2,
+.first #car3:checked ~ .block-info-car > .car3,
+.first #car4:checked ~ .block-info-car > .car4 {
+  opacity: 1;
+  z-index: 1;
+}

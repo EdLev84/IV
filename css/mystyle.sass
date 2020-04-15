@@ -32,7 +32,6 @@ header
             img
                 margin-right: 10px
 
-
         .phone-block
             display: flex
             flex-wrap: wrap
@@ -94,6 +93,9 @@ header
             height: 460px
             width: 400px
             margin-right: 50px
+
+
+
 
     nav
         width: 100%
@@ -159,3 +161,249 @@ header
                 transform: scale(1)
             .other-link:hover .submenu2
                 transform: scale(1)
+
+
+
+
+.first
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    font-family: $font-family1
+    margin: 20px 0 20px 0
+
+
+    .loader-info-block
+        max-width: 400px
+        width: 400px
+        min-width: 200px
+
+        .loader-head
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 200px
+            color: black
+            background-color: #ffffff
+            margin-bottom: 10px
+
+            p
+                font-size: 42px
+                font-weight: 900
+
+            .square
+                width: 10px
+                height: 10px
+                box-shadow: 0 10px 10px 0 rgba(253,189,99,0.7)
+                background-color: $color1
+
+        .loader-img
+            background-image: url(../img/porter.png)
+            background-size: cover
+            min-height: 330px
+            border: 3px solid #e3e4e5
+            border-top: none
+
+        .loader-tarrif
+            text-align: center
+            box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8)
+            min-height: 200px
+
+            .supply
+                border: 8px solid $color1
+                border-top: none
+                font-size: 24px
+                font-weight: 700
+                width: 250px
+                margin: 0 auto
+                padding-bottom: 10px
+
+        .loader-warning
+            margin-top: 30px
+            min-height: 250px
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-around
+            border: 3px solid $color1
+            text-align: center
+
+            .warning
+                font-size: 50px
+                color: $color1
+                text-shadow: 0 10px 15px rgba(253,189,99,0.7)
+
+            p
+                font-size: 18px
+
+            button
+                width: 250px
+                height: 50px
+                color: #ffffff
+                background: linear-gradient(to right, #1f78a2, #8be4fa)
+                box-shadow: 0 10px 15px rgba(31,120,160,0.7)
+                border: none
+                margin-bottom: 10px
+
+
+    .price
+        font-size: 36px
+        color: #3893ae
+        font-weight: bold
+
+    .cars-info-block
+        width: 800px
+        max-width: 800px
+        position: relative
+        min-height: 500px
+
+        .controls
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+
+        .cars-head
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 200px
+            color: black
+            background-color: #ffffff
+
+            p
+                font-size: 42px
+                font-weight: 900
+
+            .square
+                width: 10px
+                height: 10px
+                box-shadow: 0 10px 10px 0 rgba(253,189,99,0.7)
+                background-color: $color1
+
+
+        .cars-block
+            // border: 1px solid #cfcfd1
+            max-width: 800px
+            min-height: 100px
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-around
+            margin-bottom: 20px
+
+            .car
+                width: 160px
+                min-height: 120px
+                text-align: center
+                margin: 25px 0 5px 0
+                background-color: #ffffff
+                box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8)
+
+                p
+                    font-size: 14px
+
+                .price
+                    font-size: 24px
+                    color: #3893ae
+                    font-weight: bold
+
+                img
+                    margin-top: 5px
+
+
+    .block-info-car
+        position: relative
+        overflow: hidden
+        width: 780px
+        max-width: 800px
+        max-height: 600px
+        height: 600px
+        background-color: #ffffff
+        box-shadow: 0 0 10px 10px rgba(225, 224, 229, 0.8)
+        margin: 0 auto
+
+        .info-car
+            opacity: 0
+            position: absolute
+            z-index: 0
+
+            .truck, .truck-info
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                text-align: center
+
+                .truck-price
+                    width: 250px
+                    padding-right: 10px
+
+                    mark
+                        background: none
+                        color: $color1
+
+                    .supply
+                        border: 4px solid $color1
+                        border-top: none
+                        font-size: 24px
+                        font-weight: 700
+
+                .characteristic
+                    width: 320px
+                    padding-left: 10px
+
+                    h3
+                        margin-bottom: 5px
+
+                    .grey
+                        border: 1px solid #cfcfd1
+                        background-color: #e5e6e8
+                        text-align: left
+                        font-size: 13px
+                        padding: 3px
+
+                    .white
+                        border: 1px solid #cfcfd1
+                        background-color: #ffffff
+                        text-align: left
+                        font-size: 13px
+                        padding: 3px
+
+
+    // controls info-car
+    input
+        display: none
+
+    label
+        background-image: url(../img/angle-down.png)
+        background-size: cover
+        width: 30px
+        height: 30px
+        position: relative
+        display: block
+
+
+    #car1:checked ~ .controls > label:nth-of-type(1),
+    #car2:checked ~ .controls > label:nth-of-type(2),
+    #car3:checked ~ .controls > label:nth-of-type(3),
+    #car4:checked ~ .controls > label:nth-of-type(4)
+        background-image: url(../img/angle-down.png)
+        background-size: cover
+        width: 30px
+        height: 30px
+
+    #car1:checked ~ .cars-block > .show1,
+    #car2:checked ~ .cars-block > .show2,
+    #car3:checked ~ .cars-block > .show3,
+    #car4:checked ~ .cars-block > .show4
+        background-color: #b8b8b8
+        color: #ffffff
+
+    #car1:checked ~ .block-info-car > .car1,
+    #car2:checked ~ .block-info-car > .car2,
+    #car3:checked ~ .block-info-car > .car3,
+    #car4:checked ~ .block-info-car > .car4
+        opacity: 1
+        z-index: 1
